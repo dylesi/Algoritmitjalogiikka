@@ -13,7 +13,3 @@ def binarySearch(numlist, target, minimum=0, maximum=None):
         return binarySearch(numlist, target, guess + 1, maximum)
     else:
         return binarySearch(numlist, target, minimum, guess -1)
-
-    
-numlist = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
-print(binarySearch(numlist, 1))
