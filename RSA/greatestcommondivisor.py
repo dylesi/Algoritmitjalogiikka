@@ -6,7 +6,7 @@ import random
 def GCD(nums):
 
     #Send the array of numbers to be sorted from smallest to highest
-    nums = MathFunc.quicksort(nums)
+    nums = quicksort(nums)
 
     #Early returns if the smallest number is less than 0 or 1
     if nums[0] < 0:

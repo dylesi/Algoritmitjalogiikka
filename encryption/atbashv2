@@ -1,0 +1,7 @@
+def Atbash(word):
+    returnword = ""
+    for letter in word:
+        returnword += chr(122 - (ord(letter) - 97))
+    return returnword
+
+print(Atbash("abcde"))
