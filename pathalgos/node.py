@@ -8,6 +8,7 @@ class Node:
     def __str__ (self):
         return(f"name: {self.name}. Connections: {self.connections}. Value: {self.value}")
 
+
 nodelist = []
 nodelist.append(Node("A", {"F": 2, "C": 3})) 
 nodelist.append(Node("C", {"A": 3, "E": 1, "D": 4}))
@@ -20,5 +21,13 @@ nodelist.append(Node("G", {"F": 5, "B": 1}))
 for node in nodelist:
     print(node.connections)
 
+if __name__ == "__main__":
+
+    djik = open("pathalgos/djikstradata.txt", "r")
+    lines = djik.readlines()
+
+    for line in lines:
+        line = " ".join(line.split())
+        line = line.split(" ")
 
 
