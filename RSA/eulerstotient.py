@@ -6,5 +6,3 @@ def eulerTot(n):
         if GCD([n, i]) == 1:
             returnNums += 1
     return returnNums
-
-print(eulerTot(8))

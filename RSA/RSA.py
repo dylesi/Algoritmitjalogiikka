@@ -22,7 +22,6 @@ def getd (d):
     while True:
         if congruence(d * e, 1, t):
             return d
-            break
         else:
             d += 1
 #private key
